@@ -1,0 +1,90 @@
+/* Media */
+@media (max-width: 600px) {
+
+}
+
+/* Tags */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: url(../images/thg.png);
+  background-size: cover;
+}
+
+header {
+  /* background-color: #59eb90; */
+  width: 100%;
+  height: 90px;
+}
+
+/* footer {
+  background-color: #19231c;;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  overflow: hidden;
+} */
+
+/* Ids */
+
+/* Classes */
+.wrapper {
+  width: 100%;
+  height: 900px;
+  margin: auto;
+}
+
+.logo {
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+
+.logo-icone {
+  /* margin: 41px; */
+  position: relative;
+  top: 39%;
+  left: 5%;
+}
+
+.cadastro-login {
+  height: 100%;
+  width: 50%;
+  float: right;
+}
+
+.entrar-bt {
+  position: relative;
+  top: 37%;
+  float: right;
+  right: 5%;
+  margin-right: 5px;
+}
+
+.cadastro-bt {
+  /* margin: 40px; */
+  position: relative;
+  top: 37%;
+  float: right;
+  right: 5%;
+}
+
+.box-pesquisa {
+  background-color: white;
+  border-radius: 2%;
+  width: 400px;
+  height: 450px;
+  margin: 10px 125px;
+}
+
+.articles {
+  width: 200px;
+  height: 300px;
+  background-color: dodgerblue;
+}
