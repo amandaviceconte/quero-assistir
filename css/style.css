@@ -1,24 +1,31 @@
-/* Media */
-@media (max-width: 600px) {
 
-}
 
 /* Tags */
-html {
-  position: relative;
-  min-height: 100%;
+html { 
+  /* position: relative;
+  min-height: 100%; */
+  background: url(../images/thg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body {
+  /* background: url(../images/thg.png);
+  background-size: cover; */
   margin: 0;
-  background: url(../images/thg.png);
-  background-size: cover;
+  background-color: transparent;
 }
 
 header {
   /* background-color: #59eb90; */
   width: 100%;
   height: 90px;
+}
+
+nav {
+  height: 50px;
 }
 
 /* footer {
@@ -75,16 +82,95 @@ header {
   right: 5%;
 }
 
-.box-pesquisa {
+.box {
   background-color: white;
   border-radius: 2%;
-  width: 400px;
-  height: 450px;
-  margin: 10px 125px;
+  width: 500px;
+  height: 500px;
+}
+
+.descricao {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  top: 21px;
+  text-align: center;
+}
+
+.campos {
+  width: 80%;
+  margin: auto;
+  position: relative;
+  top: 20px;
+  text-align: center;
+}
+
+.rotulo {
+  float: left;
+  margin-bottom: 5px;
+}
+
+.campo-texto {
+  width: 100%;
+}
+
+.div-ano {
+  float: left;
+  width: 50%;
+}
+
+.campo-ano {
+  width: 90%;
+  float: left;
+}
+
+.div-genero {
+  float: right;
+  width: 50%;
+}
+
+.campo-genero {
+  width: 100%;
+  height: 21px;
+}
+
+.submit-bt {
+  float: right;
+  margin-top: 55px;
+}
+
+.div-campo {
+  float: left;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.filme-check {
+  top: 9px;
+  left: 20px;
+}
+
+.serie-check {
+  top: 9px;
+  left: 35px;
 }
 
 .articles {
   width: 200px;
   height: 300px;
   background-color: dodgerblue;
+}
+
+.bt-buscar {
+  margin-top: 10px;
+}
+
+/* Media caso width >= 1200px */
+@media (min-height: 700px) {
+  .box {
+    height: 550px;
+  }
+  .bt-buscar {
+    margin-top: 50px;
+  }
 }
