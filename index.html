@@ -2,14 +2,18 @@
 <html>
 
 <head>
-  <title>What to Watch</title>
+  <meta charset="utf-8" />
+  <title>Quero Assistir | Início</title>
+  <!-- Framework Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Folha de estilo -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Arquivos JavaScript -->
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/collection.js"></script>
   <script type="text/javascript" src="js/engine.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
-
+  <!-- Framework Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -25,16 +29,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Início<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Início</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Cadastro/Login</a>
+            <a class="nav-link" href="html/logcad.html">Cadastro/Login</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Conta</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Resultado da busca</a>
+            <a class="nav-link disabled" href="html/resultado.html">Resultado da busca</a>
           </li>
         </ul>
       </div>
@@ -46,10 +50,11 @@
       <form>
 
         <div class="descricao row">
-          <h2>Encontre quais filmes ou séries você quer assistir!</h1>
+          <h2>Encontre quais filmes ou séries você quer assistir!
+          </h2>
         </div>
 
-        <div class="input-group input-group mb-3 div-campo">
+        <div id="div-nome" class="input-group input-group mb-3">
           <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-sm">Nome</span>
           </div>

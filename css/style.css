@@ -28,17 +28,14 @@ nav {
   height: 50px;
 }
 
-/* footer {
-  background-color: #19231c;;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 40px;
-  width: 100%;
-  overflow: hidden;
-} */
-
 /* Ids */
+#div-nome {
+  margin-top: 60px;
+}
+
+#div-email-cad {
+  margin-top: 80px;
+}
 
 /* Classes */
 .wrapper {
@@ -84,9 +81,10 @@ nav {
 
 .box {
   background-color: white;
-  border-radius: 2%;
+  border-radius: 3%;
   width: 500px;
   height: 500px;
+  border: thick double #9E9E9E;
 }
 
 .descricao {
@@ -137,12 +135,6 @@ nav {
 .submit-bt {
   float: right;
   margin-top: 55px;
-}
-
-.div-campo {
-  float: left;
-  width: 100%;
-  margin-top: 60px;
 }
 
 .filme-check {
