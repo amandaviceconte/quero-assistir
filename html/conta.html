@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Quero Assistir | Resultado</title>
+  <title>Quero Assistir | Conta</title>
  <!-- CSS Bootstrap -->
  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
  <link rel="stylesheet" href="../bootstrap/css/bootstrap-grid.min.css">
@@ -29,48 +29,49 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="../index.html">Início<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="logcad.html">Cadastro/Login</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="conta.html">Conta</a>
+          <li class="nav-item active">
+            <a class="nav-link font-weight-bold" href="conta.html">Conta</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active font-weight-bold" href="resultado.html">Resultado da busca</a>
+            <a class="nav-link disabled" href="resultado.html">Resultado da busca</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <article class="box container">
-      <section class="campos">
-        <form>
-          <div class="descricao row">
-            <h2 class="mx-auto">Resultado</h2>
-          </div>
-          <hr>
-          
-          <!-- Botão submit -->
-          <button type="submit" type="button" class="btn btn-primary bt-buscar">Nova Busca</button>
-        </form>
-      </section>
-    </article>
-  <!-- <div class="wrapper">
-    <header>
-      <div class="logo">
 
-      </div>
-    </header>
-    <section>
-      <article class="articles" id="article1">
-        <h1 id="nameFilm"></h1>
-      </article>
+  <article class="box container">
+    <section class="campos">
+      <form>
+        <div class="descricao row">
+          <h2 class="mx-auto">Configurações da conta</h2>
+        </div>
+        <hr>
+        <!-- Campo e-mail -->
+        <div id="div-email-cad" class="input-group input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm">E-mail</span>
+          </div>
+          <input type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <!-- Campo senha -->
+        <div class="input-group input-group mb-3 ">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Senha</span>
+          </div>
+          <input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <!-- Botão submit -->
+        <button type="submit" type="button" class="btn btn-primary bt-buscar">Buscar</button>
+      </form>
     </section>
-  </div> -->
-  <footer></footer>
+  </article>
 </body>
 
 </html>

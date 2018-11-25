@@ -30,12 +30,16 @@ nav {
 }
 
 /* Ids */
-#div-nome {
-  margin-top: 60px;
-}
-
 #div-email-cad {
   margin-top: 80px;
+}
+
+#cad-bt {
+  float: right;
+}
+
+#log-bt {
+  float: left;
 }
 
 /* Classes */
@@ -58,10 +62,16 @@ nav {
   left: 5%;
 }
 
-.cadastro-login {
-  height: 100%;
-  width: 50%;
-  float: right;
+.cad-log-bt {
+  width: 120px;
+  color: #795548;
+  background-color: moccasin;
+  box-shadow: inset 2px -2px 7px 1px #FFCC80;
+}
+
+.cad-log-bt:active {
+  background-color: moccasin;
+  box-shadow: inset 2px -2px 7px 1px #FFCC80;
 }
 
 .entrar-bt {
@@ -83,7 +93,7 @@ nav {
 .box {
   background-color: white;
   border-radius: 3%;
-  width: 500px;
+  width: 550px;
   height: 500px;
   border: thick double #9E9E9E;
 }
@@ -92,7 +102,6 @@ nav {
   width: 90%;
   margin: auto;
   position: relative;
-  top: 21px;
   text-align: center;
 }
 
@@ -155,15 +164,23 @@ nav {
 }
 
 .bt-buscar {
-  margin-top: 10px;
+  margin-top: 30px;
+}
+
+.bt-confirma {
+  
 }
 
 /* Media caso width >= 1200px */
 @media (min-height: 700px) {
   .box {
-    height: 550px;
+    height: 600px;
   }
   .bt-buscar {
-    margin-top: 50px;
+    margin-top: 80px;
+  }
+  .descricao {
+    margin-bottom: 50px;
+    top: 21px;
   }
 }

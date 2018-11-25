@@ -4,8 +4,10 @@
 <head>
   <meta charset="utf-8" />
   <title>Quero Assistir | Início</title>
-  <!-- Framework Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- CSS Bootstrap -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-reboot.min.css">
   <!-- Folha de estilo -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- Arquivos JavaScript -->
@@ -14,28 +16,27 @@
   <script type="text/javascript" src="js/engine.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   <!-- Framework Bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Quero Assistir</a>
+      <a class="navbar-brand" href="index.html">Quero Assistir</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Início</a>
+            <a class="nav-link font-weight-bold" href="index.html">Início</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="html/logcad.html">Cadastro/Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Conta</a>
+            <a class="nav-link" href="html/conta.html">Conta</a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="html/resultado.html">Resultado da busca</a>
@@ -50,25 +51,25 @@
       <form>
 
         <div class="descricao row">
-          <h2>Encontre quais filmes ou séries você quer assistir!
-          </h2>
+          <h2>Encontre quais filmes ou séries você quer assistir!</h2>
         </div>
+        <hr>
 
-        <div id="div-nome" class="input-group input-group mb-3">
+        <div class="input-group mb-4 mt-5">
           <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-sm">Nome</span>
           </div>
           <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
         </div>
 
-        <div class="input-group mb-3">
+        <div class="input-group mb-4">
           <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-sm">Ano</span>
           </div>
           <input class="form-control" type="number" min="1888" max="2018" value="2018" id="example-number-input">
         </div>
 
-        <div class="input-group mb-3">
+        <div class="input-group mb-4">
           <div class="input-group-prepend">
             <label class="input-group-text" for="inputGroupSelect01">Gênero</label>
           </div>
@@ -85,22 +86,20 @@
           </select>
         </div>
 
-        <div class="input-group mb-3">
+        <div class="input-group">
           <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-sm">Tipo</span>
           </div>
-          <div class="form-check filme-check">
-            <label class="form-check-label">
-              <input class="form-check-input" type="radio" name="rdbt" id="rdbt-filme" value="filme" checked> Filme
-            </label>
+          <div class="custom-control custom-radio custom-control-inline filme-check">
+            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline1">Filme</label>
           </div>
-          <div class="form-check serie-check">
-            <label class="form-check-label">
-              <input class="form-check-input" type="radio" name="rdbt" id="rdbt-serie" value="serie"> Série
-            </label>
+          <div class="custom-control custom-radio custom-control-inline filme-check">
+            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline2">Série</label>
           </div>
         </div>
-
+        <!-- Botão submit -->
         <button type="submit" type="button" class="btn btn-primary bt-buscar">Buscar</button>
       </form>
     </section>
